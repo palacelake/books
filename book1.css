@@ -3,12 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
+ header {
   width: 100%;
   height: 50px;
-  background-color: #FF9A4B;
+  background-color: #FF9A4B
 }
-.main {
+ .main {
   margin: 0 auto;
   display: flex;
   width: 960px;
@@ -26,32 +26,28 @@
   background-color: #EEEEEE;
 }
 .item-visual {
-  background-size: 100% 100%;
+  background-size: 100%;
   background-image: url(img/flow01.png);
   background-repeat: no-repeat;
-  width: 280px; 
+  width: 280px;
   height: 150px;
   margin: 10px;
 }
 .item-visual2 {
-  background-size: 100% 100%;
+  background-size: 100%;
   background-image: url(img/flow02.png);
   background-repeat: no-repeat;
-  width: 280px; 
+  width: 280px;
   height: 150px;
   margin: 10px;
 }
 .item-visual3 {
-  background-size: 100% 100%;
+  background-size: 100%;
   background-image: url(img/flow03.png);
   background-repeat: no-repeat;
-  width: 280px; 
+  width: 280px;
   height: 150px;
   margin: 10px;
-}
-.card-content {
-  flex: 15px 0;
-  flex-direction: column;
 }
 
 .h3 {
@@ -60,11 +56,11 @@
 .p {
   padding: 5px;
 }
-.footer {
-    width: 100%;
-    height: 50px;
-    background-color: #AAAAAA;
-  }
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #AAAAAA;
+}
 .label {
   position: absolute;
   padding: 5px 8px;
@@ -72,17 +68,45 @@
   color: white;
   font-size: 5px;
   margin: 0px;
+}
+@media screen and (max-width:425px) {
+  header {
+    width: 100%;
+    height: 50px;
   }
-  
-@media screen and (max-width: 425px) {
-  main {
+  .main {
     width: 100%;
     display: block;
   }
-  div {
-    width: 100%;
+  .img {
+    height: 150px;
   }
-  wrap {
-    width: 100%;
+  .item {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
-}
+  .item-visual {
+    
+    width: 95%;
+    height: 150px;
+    margin: 10px;
+  }
+  .item-visual2 {
+    background-size: 100%;
+    width: 95%;
+    height: 150px;
+    margin: 10px;
+  }
+  .item-visual3 {
+    background-size: 100%;
+    width: 95%;
+    height: 150px;
+    margin: 10px;
+  }
+  footer {
+    width: 100%;
+    height: 50px;
+  }
+  }
